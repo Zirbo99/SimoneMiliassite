@@ -1,0 +1,203 @@
+body {
+  margin: 0;
+  text-align: center;
+  /*modelliamo il testo*/
+  font-family: 'Merriweather', serif;
+}
+
+.top {
+  /*per spingere verso giù il contenuto dobbiamo far pressione sul primo contenitore.
+  Gli diamo una posizione relativa all'interno del body e lo spingiamo dall'alto verso il
+  basso di diversi px*/
+  position: relative;
+  padding-top: 100px;
+  /*padding significa imbottitura. In questo caso imbottitura superiore che ci
+  spinge tutto verso il basso*/
+    background-color: #EAF6F6;
+}
+
+h1 {
+  font-size: 3.75rem; /*per rendere la grandezza del carattere dinamica dobbiamo
+  esprimerlo in percentuale. Per farlo dobbiamo fare un calcolo.
+  Se lo volessimo al 60% dobbiamo seguire questo calcolo: 60px/16= 375% di px.
+  Altrimenti lo possiamo esprimere in em. 1 em sta a 16px. 60px/16px=3.75em.
+  Se davanti a em inseriamo la ''r'' quindi 3.75rem significa che non si aggiunge
+  alla grandezza del carattere che magari specifichiamo nel body*/
+  margin: 50px auto 0 auto;
+  /*per imbottire e spingere il testo dall'alto verso il basso
+  dobbiamo aumentare il margine alto. In questo caso per precisione usiamo sempre
+  i px. Per inserire le misure una accanto all'altra senza specificare ogni cosa,
+  ci dobbiamo immaginare che va in senso orario tra: top, right, bottom e left.
+  Mettendo left e right auto il testo sta allineato al centro*/
+  width: 20%;
+  font-family: 'Sacramento', cursive;
+  color: #66BFBF;
+  /*se volessi distanziare del doppio h1 da h2 dovremo usare la funzione line-weght:  2;
+  che significa di distanziare del doppio ciò che sta sopra e sotto h1*/
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem; /*20% di pixel*/
+  color: #66BFBF;
+  font-weight: normal;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #11999E;
+}
+
+.skill-row {
+width: 50%;
+margin: 30px auto 100px auto; /*così lo centriamo e lo distanziamo di 100px sopra
+e sotto*/
+text-align: left; /*allineo il testo a sinistra*/
+line-height: 2; /*distanzio le righe del doppio*/
+}
+
+.hr1 {
+border-style: none;
+border-top-style: dotted;
+border-color: #D8D9CF;
+width: 40px;
+border-width: 6px;
+
+}
+
+.img-div {
+width: 30%;
+float: left; /*allineo il testo a sx dell'immagine. Rendo l'immagine flottante*/
+margin-right: 30px; /*allontano l'immagine dal testo di 30px*/
+}
+
+.img1 {
+width: 30%;
+float: right;
+margin-left: 30px;
+}
+
+.p1 {
+margin-bottom: 30px;
+color: #40514E;
+
+}
+.par1 {
+  width: 10%;
+  margin: auto;
+  /*si fa per allineare in automatico
+al centro avendo una lunghezza del 10%
+della pagina, in modo che possa variare*/
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 300px;
+  bottom: 300px;
+}
+
+.top-cloud {
+  /*gli diamo una posizione fissa rispetto al nostro div*/
+  position: absolute;
+  right: 300px;
+  top: 50px;
+}
+
+.profile-img {
+width: 200px;
+height: 200px;
+margin-top: 20px;
+}
+
+.mountain-img {
+
+margin-bottom: 30px;
+
+}
+
+.h2 {
+
+color: #66BFBF;
+text-align: center;
+font-weight: bold;
+font-size: 35px;
+}
+
+.copywrite {
+
+color: #EAF6F6;
+font-size: 15px;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+.final-contact {
+
+margin-top: 25px;
+margin-bottom: 25px;
+
+}
+
+.bottom-container {
+
+background-color: skyblue;
+margin-bottom: 0px;
+margin-top: 50px;
+height: 110px;
+}
+
+.table-contact {
+border-top: 30px;
+margin-left: auto;
+margin-right: auto;
+height: 90px;
+}
+
+.cell {
+
+width: 100px;
+text-align: center;
+font-weight: bold;
+}
+
+.footer-link {
+
+color: #11999E;
+
+}
+
+.footer-link:hover {
+
+color: #EAF6F6;
+
+}
+
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #fafafa;
+  font-size: 21px;
+  padding: 11px 20px 10px 20px;
+  text-decoration: none;
+  position: relative;
+  top: 20px;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
